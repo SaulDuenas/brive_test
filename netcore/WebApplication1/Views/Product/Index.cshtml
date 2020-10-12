@@ -1,0 +1,85 @@
+﻿@model ConsumeWebApi.ViewModels.ProductViewModel
+
+@{
+
+    ViewData["Title"] = "View";
+}
+
+<h1>Productos</h1>
+
+
+@if (Model.tenemosProductos() )
+{
+    <div style="height: 300px; width: 100%; overflow-y: scroll;">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Codigo de Barras</th>
+                    <th>Precio</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var producto in Model.ProductList)
+                {
+
+                    <tr>
+                        <td>@producto.Nombre</td>
+                        <td>@producto.CodigoBarras</td>
+                        <td>@producto.Precio</td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+
+}
+else if (Model.HttpStatusCode.Equals(System.Net.HttpStatusCode.NoContent))
+{
+    <div id=" " SucursalGroup" class="text-info">
+        <label class="alert-info">No se encontraron sucursales</label>
+    </div>
+}
+else
+{
+
+
+}
+<br />
+
+<form asp-controller="Product" asp-action="AddNewProduct" method="post" class="form-group" role="form">
+
+    <label>Nombre de Sucursal </label>
+
+    @Html.TextBoxFor(x => x.Product.Nombre,
+        new { @class = "form-control", placeholder = "Escribe el nombre del producto", autofocus = "autofocus" })
+
+
+    <br />
+
+    @Html.TextBoxFor(x => x.Product.CodigoBarras,
+        new { @class = "form-control", placeholder = "Escribe su codigo de barras", autofocus = "autofocus" })
+
+    <br />
+
+    @Html.TextBoxFor(x => x.Product.Precio,
+        new { @class = "form-control", placeholder = "Precio sugerido formato ##.##", autofocus = "autofocus" })
+
+
+    <br />
+
+
+    <button class="btn btn-primary" type="submit">
+        Agregar Producto
+    </button>
+
+
+</form>
+<br />
+@if (Model.HttpStatusCode == System.Net.HttpStatusCode.BadRequest)
+{
+    Html.Label("lblMessage", Model.Message, new { @class = "alert-warning" });
+}

@@ -1,0 +1,18 @@
+﻿@model Exception
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">An error occurred while processing your request.</h2>
+
+@Model.InnerException
+    <p>
+        <strong>Error Exception :</strong> <code>@Model.InnerException</code>
+    </p>
+
+<h3>Description</h3>
+<p>
+@Model.Message    
+</p>
+

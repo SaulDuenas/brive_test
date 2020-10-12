@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="model3.1.1\**" />
+    <EmbeddedResource Remove="model3.1.1\**" />
+    <None Remove="model3.1.1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="localdb\storeApp.mdf" />
+    <None Remove="localdb\storeApp_log.ldf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="localdb\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>

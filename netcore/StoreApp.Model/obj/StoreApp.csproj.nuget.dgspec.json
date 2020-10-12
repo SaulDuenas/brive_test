@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\GateTech\\Entrenamiento\\brive_api\\StoreApp.Model\\StoreApp.csproj": {}
+  },
+  "projects": {
+    "D:\\GateTech\\Entrenamiento\\brive_api\\StoreApp.Model\\StoreApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GateTech\\Entrenamiento\\brive_api\\StoreApp.Model\\StoreApp.csproj",
+        "projectName": "StoreApp",
+        "projectPath": "D:\\GateTech\\Entrenamiento\\brive_api\\StoreApp.Model\\StoreApp.csproj",
+        "packagesPath": "C:\\Users\\saul.duenas\\.nuget\\packages\\",
+        "outputPath": "D:\\GateTech\\Entrenamiento\\brive_api\\StoreApp.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\saul.duenas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

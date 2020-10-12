@@ -1,0 +1,14 @@
+D:\GateTech\Entrenamiento\brive_api\SomeUI\obj\Debug\netcoreapp2.2\SomeUI.csprojAssemblyReference.cache
+D:\GateTech\Entrenamiento\brive_api\SomeUI\obj\Debug\netcoreapp2.2\SomeUI.csproj.CoreCompileInputs.cache
+D:\GateTech\Entrenamiento\brive_api\SomeUI\obj\Debug\netcoreapp2.2\SomeUI.AssemblyInfoInputs.cache
+D:\GateTech\Entrenamiento\brive_api\SomeUI\obj\Debug\netcoreapp2.2\SomeUI.AssemblyInfo.cs
+D:\GateTech\Entrenamiento\brive_api\SomeUI\bin\Debug\netcoreapp2.2\SomeUI.deps.json
+D:\GateTech\Entrenamiento\brive_api\SomeUI\bin\Debug\netcoreapp2.2\SomeUI.runtimeconfig.json
+D:\GateTech\Entrenamiento\brive_api\SomeUI\bin\Debug\netcoreapp2.2\SomeUI.runtimeconfig.dev.json
+D:\GateTech\Entrenamiento\brive_api\SomeUI\bin\Debug\netcoreapp2.2\SomeUI.dll
+D:\GateTech\Entrenamiento\brive_api\SomeUI\bin\Debug\netcoreapp2.2\SomeUI.pdb
+D:\GateTech\Entrenamiento\brive_api\SomeUI\obj\Debug\netcoreapp2.2\SomeUI.csproj.CopyComplete
+D:\GateTech\Entrenamiento\brive_api\SomeUI\obj\Debug\netcoreapp2.2\SomeUI.dll
+D:\GateTech\Entrenamiento\brive_api\SomeUI\obj\Debug\netcoreapp2.2\SomeUI.pdb
+D:\GateTech\Entrenamiento\brive_api\SomeUI\bin\Debug\netcoreapp2.2\StoreApp.Class.dll
+D:\GateTech\Entrenamiento\brive_api\SomeUI\bin\Debug\netcoreapp2.2\StoreApp.Class.pdb

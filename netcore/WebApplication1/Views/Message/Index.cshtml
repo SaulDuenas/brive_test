@@ -1,0 +1,22 @@
+﻿@model System.Net.Http.HttpResponseMessage
+@{
+    ViewData["Title"] = "Message";
+}
+
+<h1 class="text-info">Information.</h1>
+<h2 class="text-info">Vista generica.</h2>
+
+
+    <p>
+        <strong>HttpStatusCode :</strong> <code>@Model.StatusCode</code>
+    </p>
+
+    <h3>Description</h3>
+    <p>
+    @Model.RequestMessage    
+    </p>
+
+<p class="text-info">
+    Si estas viendo esta vista, es por que no se tienen considerados todos los casos en las vistas
+</p>
+

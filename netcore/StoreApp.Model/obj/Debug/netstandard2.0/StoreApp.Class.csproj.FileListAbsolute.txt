@@ -1,0 +1,9 @@
+D:\GateTech\Entrenamiento\brive_api\StoreApp.Model\obj\Debug\netstandard2.0\StoreApp.Class.csprojAssemblyReference.cache
+D:\GateTech\Entrenamiento\brive_api\StoreApp.Model\obj\Debug\netstandard2.0\StoreApp.Class.csproj.CoreCompileInputs.cache
+D:\GateTech\Entrenamiento\brive_api\StoreApp.Model\obj\Debug\netstandard2.0\StoreApp.Class.AssemblyInfoInputs.cache
+D:\GateTech\Entrenamiento\brive_api\StoreApp.Model\obj\Debug\netstandard2.0\StoreApp.Class.AssemblyInfo.cs
+D:\GateTech\Entrenamiento\brive_api\StoreApp.Model\bin\Debug\netstandard2.0\StoreApp.Class.deps.json
+D:\GateTech\Entrenamiento\brive_api\StoreApp.Model\bin\Debug\netstandard2.0\StoreApp.Class.dll
+D:\GateTech\Entrenamiento\brive_api\StoreApp.Model\bin\Debug\netstandard2.0\StoreApp.Class.pdb
+D:\GateTech\Entrenamiento\brive_api\StoreApp.Model\obj\Debug\netstandard2.0\StoreApp.Class.dll
+D:\GateTech\Entrenamiento\brive_api\StoreApp.Model\obj\Debug\netstandard2.0\StoreApp.Class.pdb

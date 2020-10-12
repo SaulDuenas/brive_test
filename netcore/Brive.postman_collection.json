@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "bd3f27df-8060-495f-b0f3-d7598e5a5a36",
+		"name": "Brive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear Tienda",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Id",
+							"value": "000000-0000000000-00000000000",
+							"type": "text"
+						},
+						{
+							"key": "Nombre",
+							"value": "Sucursal A",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:6000/api/empresa/tienda/nuevo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"empresa",
+						"tienda",
+						"nuevo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver Existencias por  Tienda",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6000/api/empresa/tienda/b5f19687-d2a3-4f2d-b956-097524d084ac/existencias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"empresa",
+						"tienda",
+						"b5f19687-d2a3-4f2d-b956-097524d084ac",
+						"existencias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comprar existencias por tienda",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "IdSucursal",
+							"value": "b5f19687-d2a3-4f2d-b956-097524d084ac",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "IdProducto",
+							"value": "be96e211-82ec-4cd8-9f0a-2cc6a90ac643",
+							"type": "text"
+						},
+						{
+							"key": "Cantidad",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:6000/api/empresa/tienda/b5f19687-d2a3-4f2d-b956-097524d084ac/existencia/comprar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"empresa",
+						"tienda",
+						"b5f19687-d2a3-4f2d-b956-097524d084ac",
+						"existencia",
+						"comprar"
+					],
+					"query": [
+						{
+							"key": "idsucursal",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Existencia por tienda",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "IdSucursal",
+							"value": "b5f19687-d2a3-4f2d-b956-097524d084ac",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "IdProducto",
+							"value": "be96e211-82ec-4cd8-9f0a-2cc6a90ac643",
+							"type": "text"
+						},
+						{
+							"key": "Cantidad",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:6000/api/empresa/tienda/b5f19687-d2a3-4f2d-b956-097524d084ac/existencia/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"empresa",
+						"tienda",
+						"b5f19687-d2a3-4f2d-b956-097524d084ac",
+						"existencia",
+						"agregar"
+					],
+					"query": [
+						{
+							"key": "idsucursal",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comprar Producto por tienda",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "IdSucursal",
+							"value": "b5f19687-d2a3-4f2d-b956-097524d084ac",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "IdProducto",
+							"value": "be96e211-82ec-4cd8-9f0a-2cc6a90ac643",
+							"type": "text"
+						},
+						{
+							"key": "Cantidad",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:6000/api/empresa/tienda/b5f19687-d2a3-4f2d-b956-097524d084ac/existencia/comprar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"empresa",
+						"tienda",
+						"b5f19687-d2a3-4f2d-b956-097524d084ac",
+						"existencia",
+						"comprar"
+					],
+					"query": [
+						{
+							"key": "idsucursal",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar nuevo producto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Nombre",
+							"value": "   ",
+							"type": "text"
+						},
+						{
+							"key": "CodigoBarras",
+							"value": "100012",
+							"type": "text"
+						},
+						{
+							"key": "Precio",
+							"value": "12.00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:6000/api/empresa/producto/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"empresa",
+						"producto",
+						"agregar"
+					],
+					"query": [
+						{
+							"key": "idsucursal",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Tiendas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:6000/api/empresa/tiendas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"empresa",
+						"tiendas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6000/api/empresa/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"empresa",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

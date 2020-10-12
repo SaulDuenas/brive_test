@@ -1,0 +1,58 @@
+﻿@model WebApplication1.ViewModels.StoreViewModel
+
+@{
+
+    ViewData["Title"] = "View";
+}
+
+<h1>Sucursales</h1>
+
+
+@if (Model.tenemossucursales() )
+{
+    <div id=" " SucursalGroup" class=" list-group" style="height: 300px; width: 100%; overflow-y: scroll;">
+        <ul class="list-group">
+
+            @foreach (var sucursal in Model.StoreList)
+            {
+                <li class="list-group-item"> @sucursal.Nombre </li>
+            }
+
+        </ul>
+    </div>
+
+}
+else if (Model.HttpStatusCode.Equals(System.Net.HttpStatusCode.NoContent))
+{
+    <div id=" " SucursalGroup" class="text-info">
+        <label class="alert-info">No se encontraron sucursales</label>
+    </div>
+}
+else
+{
+
+
+}
+<br />
+
+<form asp-controller="Store" asp-action="AddNewStore" method="post" class="form-group" role="form">
+
+    <label>Nombre de Sucursal </label>
+
+    @Html.TextBoxFor(x => x.Store.Nombre,
+        new { @class = "form-control", placeholder = "Escribe un nombre de Sucursal", autofocus = "autofocus" })
+
+
+    <br />
+
+    <button class="btn btn-primary" type="submit">
+        Crear sucursal
+    </button>
+
+
+</form>
+<br />
+@if (Model.HttpStatusCode == System.Net.HttpStatusCode.BadRequest)
+{
+    Html.Label("lblMessage", Model.Message, new { @class = "alert-warning" });
+}
